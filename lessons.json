@@ -1,0 +1,63 @@
+{
+  "skills": [
+    {
+      "id": "skill-1",
+      "title": "Binary Logic",
+      "description": "Learn the basics of binary systems and logic gates.",
+      "lessons": [
+        {
+          "id": "lesson-1-1",
+          "title": "Intro to Logic Gates",
+          "exercises": [
+            {
+              "id": "ex-1-1-1",
+              "type": "multiple-choice",
+              "question": "Which logic gate produces a HIGH output (1) only when all its inputs are HIGH?",
+              "options": ["OR", "NOT", "AND", "XOR"],
+              "answer": "AND"
+            },
+            {
+              "id": "ex-1-1-2",
+              "type": "multiple-choice",
+              "question": "Which logic gate is also known as an inverter?",
+              "options": ["NAND", "NOR", "XOR", "NOT"],
+              "answer": "NOT"
+            },
+            {
+              "id": "ex-1-1-3",
+              "type": "multiple-choice",
+              "question": "What is the output of a two-input OR gate if one input is HIGH (1) and the other is LOW (0)?",
+              "options": ["HIGH (1)", "LOW (0)", "It depends on the gate", "The gate will be damaged"],
+              "answer": "HIGH (1)"
+            }
+          ]
+        },
+        {
+          "id": "lesson-1-2",
+          "title": "Universal Gates",
+          "exercises": [
+            {
+              "id": "ex-1-2-1",
+              "type": "multiple-choice",
+              "question": "Which of the following are considered 'universal gates', meaning any other logic gate can be created from them?",
+              "options": ["AND and OR", "XOR and XNOR", "NAND and NOR", "NOT and AND"],
+              "answer": "NAND and NOR"
+            },
+            {
+              "id": "ex-1-2-2",
+              "type": "fill-in-the-blank",
+              "question": "A NAND gate is an AND gate followed by a ___ gate.",
+              "answer": "NOT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill-2",
+      "title": "Combinational Logic",
+      "description": "Build and understand circuits with outputs that depend only on the current inputs.",
+      "lessons": []
+    }
+  ]
+}
