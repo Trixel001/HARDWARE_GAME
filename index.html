@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Architect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Hardware Architect</h1>
+            <div id="player-stats">
+                <span id="score">Score: 0</span>
+                <span id="lives">Lives: 5</span>
+            </div>
+        </header>
+
+        <main id="main-view">
+            <div id="skill-map-container" class="view active">
+                <h2>Skill Map</h2>
+                <div id="skill-map">
+                    <!-- Skills will be dynamically loaded here -->
+                </div>
+                <button id="practice-btn" disabled>Practice Weakest Concepts</button>
+            </div>
+
+            <div id="lesson-container" class="view">
+                <h2 id="lesson-title"></h2>
+                <div id="question-container"></div>
+                <button id="check-answer-btn">Check</button>
+                <div id="feedback"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

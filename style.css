@@ -1,0 +1,181 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+#player-stats {
+    font-size: 1.2em;
+}
+
+#player-stats span {
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+#skill-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-node {
+    background-color: #e0e0e0;
+    color: #888;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.skill-node.unlocked {
+    background-color: #58cc02;
+    color: white;
+    cursor: pointer;
+}
+
+.skill-node.unlocked:hover {
+    transform: scale(1.1);
+}
+
+.skill-node.completed {
+    background-color: #ffc107;
+    color: white;
+}
+
+#lesson-container h2 {
+    color: #4a90e2;
+}
+
+#question-container {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.option {
+    display: block;
+    background-color: #f7f7f7;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option:hover {
+    background-color: #eef5ff;
+    border-color: #4a90e2;
+}
+
+.option.selected {
+    background-color: #d1eaff;
+    border-color: #4a90e2;
+}
+
+#check-answer-btn {
+    background-color: #58cc02;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#check-answer-btn:hover {
+    background-color: #4aa802;
+}
+
+#feedback {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#feedback.correct {
+    background-color: #d7ffb8;
+    color: #58cc02;
+}
+
+#feedback.incorrect {
+    background-color: #ffdfe0;
+    color: #ea2b2b;
+}
+
+#practice-btn {
+    background-color: #8854c6; /* A distinct purple color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 60%;
+    margin: 30px auto 10px auto; /* Center it */
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#practice-btn:hover:not(:disabled) {
+    background-color: #7045a5;
+}
+
+#practice-btn:disabled {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+}
